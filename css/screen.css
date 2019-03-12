@@ -59,7 +59,8 @@ html {
     font-family: "DroidSerif", Georgia, serif;
     color: #5C6366;
     padding: 48px 24px 24px;
-    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -97,6 +98,7 @@ img {
     Default markup for typographic elements
 */
 
+
 h1,h2,h3 {
     color: #17181A;
     font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
@@ -109,10 +111,17 @@ h1 {
     font-family: "Playfair Display",serif;
 }
 
+
 h2 {
     font-size: 23px;
     line-height: 32px;
     margin: 0 0 24px;
+
+}
+
+/*Hiermee selecteer je elke h2 die direct na gelijk welk element komt en pas je een margin-top van 48px toe. Dubbel zo veel om margin-collapsing te voorkomen.*/
+* + h2{
+    margin-top: 48px;
 }
 
 h3 {
