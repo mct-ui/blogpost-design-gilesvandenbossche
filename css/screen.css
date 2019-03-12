@@ -101,10 +101,11 @@ h1,h2,h3 {
     font-family: "Inter UI", "Helvetica Neue", Helvetica, arial, sans-serif;
 
 }
-h1 {font-family: "Times New Roman", serif;
+h1 {
     font-size: 36px;
     line-height: 40px;
     margin: 0 0 24px;
+    font-family: "Playfair Display",serif;
 }
 
 h2 {
